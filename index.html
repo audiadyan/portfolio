@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | [Your Name]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-center p-6">
+      <h1 class="text-4xl font-bold mb-4">Hi, I'm [Your Name]</h1>
+      <p class="text-xl mb-6">Software Engineering Enthusiast | iOS & Web Developer</p>
+      <div class="flex space-x-4">
+        <a href="#contact" class="px-5 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-gray-100">Contact Me</a>
+        <a href="resume.pdf" class="px-5 py-3 bg-indigo-700 font-semibold rounded-lg shadow hover:bg-indigo-800">Download Resume</a>
+      </div>
+    </section>
+
+    <!-- Summary -->
+    <section class="max-w-4xl mx-auto py-16 px-6">
+      <h2 class="text-2xl font-bold mb-4">Summary</h2>
+      <p>
+        Software Engineering Enthusiast with a strong focus on iOS and web development, experienced in Swift, SwiftUI, SwiftData, CoreLocation, AVFoundation (OCR), and Screen Time API. 
+        Graduated with a Bachelor of Informatics Engineering (GPA 3.87/4.00) from University of Mataram, complemented by training at Apple Developer Academy and Bangkit Academy.
+        Passionate about creating scalable, user-focused, and impactful digital solutions.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section class="bg-gray-100 py-16 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-8">Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Bandingkè -->
+          <div class="bg-white rounded-xl shadow p-6">
+            <h3 class="text-xl font-semibold">Bandingkè – Nutrition Facts Comparison</h3>
+            <p class="text-sm text-gray-500 mb-2">May – Jul 2025 | Published on App Store</p>
+            <p>iOS app using OCR to scan and compare nutrition labels on packaged food products, providing healthier decision-making insights.</p>
+            <p class="mt-2 text-sm text-gray-600">Tech: SwiftUI, AVFoundation (OCR)</p>
+          </div>
+          <!-- KartCaw -->
+          <div class="bg-white rounded-xl shadow p-6">
+            <h3 class="text-xl font-semibold">KartCaw – Go-Kart Performance Tracker</h3>
+            <p class="text-sm text-gray-500 mb-2">Apr – May 2025 | In Development</p>
+            <p>Tracks lap performance of go-kart players using GPS and Apple Maps, with IoT integration for precise location tracking.</p>
+            <p class="mt-2 text-sm text-gray-600">Tech: SwiftUI, CoreLocation, IoT Integration</p>
+          </div>
+          <!-- Rooster -->
+          <div class="bg-white rounded-xl shadow p-6">
+            <h3 class="text-xl font-semibold">Rooster – Impulse Buying Reduction</h3>
+            <p class="text-sm text-gray-500 mb-2">Aug – Sep 2025 | TestFlight</p>
+            <p>Helps users reduce impulsive buying by monitoring e-commerce app usage via ScreenTime API and sending mindful reminders.</p>
+            <p class="mt-2 text-sm text-gray-600">Tech: SwiftUI, ScreenTime API, Notifications</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="max-w-4xl mx-auto py-16 px-6">
+      <h2 class="text-2xl font-bold mb-4">Skills</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="font-semibold mb-2">iOS Development</h3>
+          <p>Swift, SwiftUI, SwiftData, CoreLocation, AVFoundation (OCR), ScreenTime API, Notifications, Xcode, TestFlight</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Web Development</h3>
+          <p>Laravel, WordPress (custom themes), HTML, CSS, JavaScript, SQL</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Tools</h3>
+          <p>Git/GitHub, Figma, Trello</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Other</h3>
+          <p>Windows & Linux troubleshooting, technical support</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-indigo-600 text-white py-16 px-6 text-center">
+      <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
+      <p class="mb-6">Feel free to reach out for collaborations or opportunities.</p>
+      <a href="mailto:youremail@example.com" class="px-5 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-gray-100">Email Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-sm text-gray-500">
+      © 2025 [Your Name]. All rights reserved.
+    </footer>
+
+    <!-- Simple Logging with Trace ID -->
+    <script>
+      function generateTraceId() {
+        return 'xxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+          var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+          return v.toString(16);
+        });
+      }
+      const traceId = generateTraceId();
+      console.log(`[TraceID: ${traceId}] Page loaded`);
+      document.querySelectorAll('a').forEach(el => {
+        el.addEventListener('click', () => {
+          console.log(`[TraceID: ${traceId}] Clicked on link: ${el.href}`);
+        });
+      });
+    </script>
+  </body>
+</html>
